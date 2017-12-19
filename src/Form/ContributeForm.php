@@ -68,11 +68,6 @@ class ContributeForm extends FormBase {
     foreach ($form_state->getValues() as $key => $value) {
       drupal_set_message($key . ': ' . $value);
     }
-    //sends form info to webmaster
-    if (isset($_POST['submit'])) {
-        $to = 'blogventioncosplay@gmail.com';
-        $subject = 'Feedback from my site';
-    }
   }
 }
 ?>
