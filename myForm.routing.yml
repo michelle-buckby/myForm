@@ -1,0 +1,61 @@
+myForm_contribute:
+  path: 'myForm/contribute'
+  defaults:
+    _form: '\Drupal\myForm\Form\ContributeForm'
+    _title: 'Contact Blogvention!'
+  requirements:
+    _permission: 'access content'
+
+myForm_list:
+
+  path: '/admin/content/myForm'
+
+  defaults:
+
+    _controller: '\Drupal\myForm\src\Forms\ContributeForm.php'
+
+  requirements:
+
+    _permission: 'manage myForm forms'
+
+myForm_add:
+
+  path: '/admin/content/myForm/add'
+
+  defaults:
+
+    _form: '\Drupal\myForm\AddForm'
+
+    _title: 'Create contact'
+
+  requirements:
+
+    _permission: 'use myForm form'
+
+myForm_edit:
+
+  path: 'admin/content/myForm/edit/{id}'
+
+  defaults:
+
+    _form: '\Drupal\myForm\AddForm'
+
+    _title: 'Edit contact'
+
+  requirements:
+
+    _permission: 'use myForm form'
+
+myForm_delete:
+
+  path: '/admin/content/myForm/delete/{id}'
+
+  defaults:
+
+    _form: 'Drupal\myForm\DeleteForm'
+
+    _title: 'Delete contact'
+
+  requirements:
+
+    _permission: 'manage myForm forms'

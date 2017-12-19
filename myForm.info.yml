@@ -1,0 +1,6 @@
+name: Blogvention Contact Form
+type: module
+description: 'A form to contact Blogvention'
+package: Custom
+core: 8.x
+hidden: false
